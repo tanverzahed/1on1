@@ -7,10 +7,16 @@
   background-color: rgba(255, 253, 239, 1);
 }
 
+.w-view-50{
+  width: 50vw;
+}
+
 .left-pop {
   left: calc(100vw - 64px - 30px);
 }
-
+.abs-center{
+  left: calc(100vw - 58.3333333% - 35%);
+}
 th, td{
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -75,6 +81,12 @@ table td:nth-child(3) {
     width: 24rem !important;
     top: -20px;
   }
+  .w-view-50{
+    width: 40vw;
+  }
+  .abs-center{
+    left: calc(100vw - 58.3333333% - 22%);
+  }
   .loginCalender{
     top: 65px;
     z-index: -1;
@@ -93,6 +105,9 @@ table td:nth-child(3) {
     left: calc(50vw - 16rem) ;
     width: 32rem ;
     top: -20px
+  }
+  .w-view-50{
+    width: 30vw;
   }
   .loginCalender{
     top: 65px;

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.content{
+  background-color: rgba(255, 253, 239, 1);
+}
+
+.left-pop {
+  left: calc(100vw - 64px - 30px);
+}
+
+th, td{
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+
+table td:nth-child(3) {
+  color: blue;
+}
+
+.row-span-13 {
+  grid-row: span 13 / span 13;
+}
+.logsign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facebook{
+  background-color: rgba(56, 84, 153, 1);
+  color: white;
+}
+.facebookIcon{
+  padding-top: 2;
+}
+
+.loginCalender{
+  position: absolute;
+  top: 65px;
+  z-index: -1;
+  left: calc(100vw - 300px);
+}
+.loginMeeting{
+  position: absolute;
+  left: -200px;
+  top:200px;
+}
+
+.login{
+  height: min-content;
+  position: absolute;
+  left: calc(4.5vw);
+  grid-template-rows: repeat(12, 40px);
+
+}
+.signup{
+  grid-template-rows: repeat(17, 40px);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  .loginCalender, .loginMeeting{
+    display: none;
+  }
+
+}
+@media (min-width: 640px) {
+  .login{
+    left: calc(50vw - 12rem) !important;
+    width: 24rem !important;
+    top: -20px;
+  }
+  .loginCalender{
+    top: 65px;
+    z-index: -1;
+    left: calc(100vw - 230px);
+  }
+  .loginMeeting{
+    left: -230px;
+    top:200px;
+  }
+  .left-pop {
+    left: calc(100vw - 9.5vw - 64px - 30px);
+  }
+}
+@media (min-width:1024px) {
+  .login{
+    left: calc(50vw - 16rem) ;
+    width: 32rem ;
+    top: -20px
+  }
+  .loginCalender{
+    top: 65px;
+    z-index: -1;
+    left: calc(100vw - 300px);
+  }
+  .left-pop {
+    left: calc(100vw - 10.5vw - 64px - 30px);
+  }
+}

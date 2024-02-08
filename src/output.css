@@ -669,6 +669,10 @@ video {
   margin-right: auto;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -1357,10 +1361,6 @@ table td:nth-child(3) {
 
   .lg\:mr-14 {
     margin-right: 3.5rem;
-  }
-
-  .lg\:w-8\/12 {
-    width: 66.666667%;
   }
 
   .lg\:w-6\/12 {

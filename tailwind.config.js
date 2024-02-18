@@ -5,6 +5,15 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [],
+  },
+  theme: {
+    fontFamily:{
+      'montserrat': ['Montserrat', 'sans-serif'],
+      'open-sans': ['Open Sans', 'sans-serif'],
+    },
+  },
 }
 

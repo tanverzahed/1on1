@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.content{
-  background-color: rgba(255, 253, 239, 1);
+@font-face {
+  font-family: 'montserrat';
+  src: url();
 }
 
+*{
+  @apply font-montserrat font-medium;
+}
+
+.meetingmid{
+  @apply  text-xl bg-green-600 pr-6 pl-6 pt-4 pb-4 text-white;
+}
+.meetingmidUnFinal{
+  @apply  text-xl bg-red-600 pr-6 pl-6 pt-4 pb-4 text-white;
+}
 .w-view-50{
   width: 50vw;
 }

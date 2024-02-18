@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <title>1on1 - Calender</title>
+    <title>1on1 - Meetings</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
-  <body>
+  <body class="bg-yellow-50 overflow-x-hidden">
     <header class="shadow-lg z-10">
       <nav
         class="flex flex-row mx-auto list-none bg-white h-20 w-screen sm:px-6 lg:px-8 items-center justify-between relative"
@@ -14,7 +17,7 @@
         <div class="flex flex-1 justify-start">
           <div>
             <a class="px-2 py-2 hover:text-blue-700 font-medium" href="#"
-              >Calender</a
+              >Meetings</a
             >
           </div>
           <div>
@@ -52,6 +55,138 @@
         </div>
       </nav>
     </header>
-    <div class="content"></div>
+    <div
+      class="content mb-10 pt-10 pb-10 mt-20 flex flex-1 flex-col ml-auto mr-auto justify-center items-start w-11/12 bg-white shadow-lg"
+    >
+      <ul class="flex justify-center w-full flex-row float-start">
+        <li class="flex flex-col w-32 h-60 bg-white">
+          <div>[Date1]</div>
+          <div>[3am: 5am]Tray</div>
+        </li>
+        <li class="flex flex-col w-32 h-60 bg-white">
+          <div>[Date2]</div>
+          <div>[3am: 5am]Tray</div>
+        </li>
+        <li class="flex flex-col w-32 h-60 bg-white">
+          <div>[Date3]</div>
+          <div>[3am: 5am]Tray</div>
+        </li>
+        <li class="flex flex-col w-32 h-60 bg-white">
+          <div>[Date4]</div>
+          <div>[3am: 5am]Tray</div>
+        </li>
+        <li class="flex flex-col w-32 h-60 bg-white">
+          <div>[Date5]</div>
+          <div>[3am: 5am]Tray</div>
+        </li>
+        <li class="flex flex-col w-32 h-60 bg-white">
+          <div>[Date6]</div>
+          <div>[3am: 5am]Tray</div>
+        </li>
+        <li class="flex flex-col w-32 h-60 bg-white">
+          <div>[Date7]</div>
+          <div>[3am: 5am]Tray</div>
+        </li>
+      </ul>
+      <div class="pl-16 font-montserrat font-bold text-2xl self-start">
+        Finalized
+      </div>
+      <ul class="pl-14 flex flex-1 flex-col">
+        <li
+          class="rounded-t-3xl bg-green-600 text-xl pr-6 pl-6 pt-4 pb-4 text-white"
+        >
+          Meeting with Tray on ______ (in ___ days)
+        </li>
+        <li class="meetingmid">Meeting with Bob on ______ (in ___ days)</li>
+        <li
+          class="rounded-b-3xl bg-green-600 text-xl pr-6 pl-6 pt-4 pb-4 text-white"
+        >
+          Meeting with Michele on ______ (in ___ days)
+        </li>
+      </ul>
+      <div class="flex flex-1 justify-between w-11/12 flex-row">
+        <h1 class="pl-16 font-montserrat font-bold text-2xl self-start">
+          Unfinalized
+        </h1>
+      </div>
+      <ul class="pl-14 flex flex-1 flex-col">
+        <li
+          class="rounded-t-3xl flex flex-1 justify-between flex-row bg-red-600 text-xl pr-6 pl-6 pt-4 pb-4 text-white"
+        >
+          <div class="self-start">
+            Meeting with Tray on ______ (in ___ days)
+          </div>
+          <div class="flex flex-row justify-center items-center gap-1">
+            <button class="hover:bg-slate-400 p-1">
+              <img src="./images/edit.svg" alt="edit" width="28px" />
+            </button>
+            <button class="hover:bg-slate-400 p-1">
+              <img
+                src="./images/remind.svg"
+                alt="Send remind email"
+                width="28px"
+              />
+            </button>
+            <button class="hover:bg-slate-400 p-1">
+              <img
+                src="./images/trash.svg"
+                alt="Cancel the email"
+                width="28px"
+              />
+            </button>
+          </div>
+        </li>
+        <li class="meetingmidUnFinal flex flex-1 justify-between flex-row">
+          <div class="self-start">
+            Meeting with Tray on ______ (in ___ days)
+          </div>
+          <div class="flex flex-row justify-center items-center gap-1">
+            <button class="hover:bg-slate-400 p-1">
+              <img src="./images/edit.svg" alt="edit" width="28px" />
+            </button>
+            <button class="hover:bg-slate-400 p-1">
+              <img
+                src="./images/remind.svg"
+                alt="Send remind email"
+                width="28px"
+              />
+            </button>
+            <button class="hover:bg-slate-400 p-1">
+              <img
+                src="./images/trash.svg"
+                alt="Cancel the email"
+                width="28px"
+              />
+            </button>
+          </div>
+        </li>
+        <li
+          class="rounded-b-3xl flex flex-1 justify-between flex-row bg-red-600 text-xl pr-6 pl-6 pt-4 pb-4 text-white"
+        >
+          <div class="self-start">
+            Meeting with Tray on ______ (in ___ days)
+          </div>
+          <div class="flex flex-row justify-center items-center gap-1">
+            <button class="hover:bg-slate-400 p-1">
+              <img src="./images/edit.svg" alt="edit" width="28px" />
+            </button>
+            <button class="hover:bg-slate-400 p-1">
+              <img
+                src="./images/remind.svg"
+                alt="Send remind email"
+                width="28px"
+              />
+            </button>
+            <button class="hover:bg-slate-400 p-1">
+              <img
+                src="./images/trash.svg"
+                alt="Cancel the email"
+                width="28px"
+              />
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

@@ -7,15 +7,29 @@
   src: url();
 }
 
+/* Header styles */
+.header-item-text {
+
+  @apply px-2 py-2 hover:text-blue-700 font-montserrat font-semibold;
+}
+.header-item-box {
+  width: 100vw;
+  @apply bg-white px-2 py-2 flex flex-row justify-start ;
+}
+
+.days{
+@apply flex flex-col w-32 h-60 bg-gray-50
+}
+
 *{
   @apply font-montserrat font-medium;
 }
 
-.meetingmid{
+.meetingFinal{
   @apply  text-xl bg-green-600 pr-6 pl-6 pt-4 pb-4 text-white;
 }
-.meetingmidUnFinal{
-  @apply  text-xl bg-red-600 pr-6 pl-6 pt-4 pb-4 text-white;
+.meetingUnFinal{
+  @apply  text-xl bg-red-600 pr-6 pl-6 pt-4 pb-4 text-white flex flex-1 justify-between flex-row;
 }
 .w-view-50{
   width: 50vw;
@@ -91,6 +105,7 @@ table td:nth-child(3) {
     width: 24rem !important;
     top: -20px;
   }
+
   .w-view-50{
     width: 40vw;
   }
@@ -109,6 +124,7 @@ table td:nth-child(3) {
   .left-pop {
     left: calc(100vw - 9.5vw - 64px - 30px);
   }
+
 }
 @media (min-width:1024px) {
   .login{

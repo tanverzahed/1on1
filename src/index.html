@@ -9,27 +9,11 @@
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="bg-yellow-50 overflow-x-hidden">
     <header class="shadow-lg z-10">
       <nav
-        class="flex flex-row mx-auto list-none bg-white h-20 w-screen sm:px-6 lg:px-8 items-center justify-between relative"
+        class="flex flex-row mx-auto list-none bg-white h-20 w-screen sm:px-6 lg:px-8 items-center justify-around relative"
       >
-        <div class="flex flex-1 justify-start">
-          <div>
-            <a
-              class="px-2 py-2 hover:text-blue-700 font-medium"
-              href="./schedules.html"
-              >Meetings</a
-            >
-          </div>
-          <div>
-            <a
-              class="px-2 py-2 hover:text-blue-700 font-medium"
-              href="./contacts.html"
-              >Contacts</a
-            >
-          </div>
-        </div>
         <div class="flex flex-shrink-0 items-center">
           <a href="./index.html"
             ><img
@@ -39,24 +23,28 @@
               width="100px"
           /></a>
         </div>
-        <div class="flex flex-1 justify-end sm:ml-6">
-          <div>
-            <a
-              class="px-2 py-2 hover:text-blue-700 font-medium"
-              href="./signup.html"
-              >Signup</a
-            >
+        <button>
+          <img
+            src="./images/menu-burger.svg"
+            alt="Dropdown button"
+            width="20px"
+          />
+        </button>
+        <div class="absolute top-20 flex flex-col lg:flex-row">
+          <div class="header-item-box">
+            <a class="header-item-text" href="./schedules.html">Meetings</a>
           </div>
-          <div>
-            <a
-              class="bg-gray-100 hover:text-blue-700 font-medium rounded-3xl px-4 mr-2 py-2 border-solid border-slate-300 border-2 opacity-65 hover:opacity-100"
-              href="./login.html"
-              >Login</a
-            >
+          <div class="header-item-box">
+            <a class="header-item-text" href="./contacts.html">Contacts</a>
+          </div>
+          <div class="header-item-box">
+            <a class="header-item-text" href="./signup.html">Signup</a>
+          </div>
+          <div class="header-item-box">
+            <a class="header-item-text" href="./login.html">Login</a>
           </div>
         </div>
       </nav>
     </header>
-    <div class="content"></div>
   </body>
 </html>

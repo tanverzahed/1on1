@@ -55,12 +55,11 @@
         </div>
       </nav>
     </header>
-    <div class="mt-20">
+    <div class="mt-20 opacity-10">
       <div class="flex justify-between flex-row w-full">
         <div class="text-2xl ml-custom-1 mb-3 mr-20">Meetings</div>
         <button
           type="button"
-          onclick="location.href='./newschedules.html'"
           class="hover:bg-sky-800 mr-custom-1 mb-3 self-end bg-sky-500 text-white text-sm rounded-lg pr-3 pl-3 pt-2 pb-2 w-30 transition duration-300 ease-in-out hover:shadow-lg hover:opacity-80"
         >
           Add meeting
@@ -113,6 +112,23 @@
           />
         </li>
       </ul>
+    </div>
+    <div
+      class="absolute abs-center drop-shadow-xl w-11/12 sm:w-7/12 h-3/5 bg-white top-40 rounded-md border-solid border-2 border-gray-100 shadow-lg p-2.5 z-20"
+    >
+      <button onclick="location.href='./schedules.html'">
+        <img
+          class="absolute right-1.5 top-1.5 cursor-pointer hover:opacity-100 opacity-50"
+          src="./images/cross.svg"
+          alt="Background image of contacts"
+          width="18px"
+        />
+      </button>
+
+      <form
+        class="flex flex-1 gap-1 flex-row items-end absolute top-2 content-end left-3"
+        action="POST"
+      ></form>
     </div>
   </body>
 </html>

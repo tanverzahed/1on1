@@ -17,6 +17,14 @@
   @apply bg-white px-2 py-2 flex flex-row justify-start ;
 }
 
+.ml-custom-1 {
+  margin-left: 2%;
+}
+
+.mr-custom-1 {
+  margin-right: 2%;
+}
+
 .days{
 @apply flex flex-col w-32 h-60 bg-gray-50
 }
@@ -123,6 +131,13 @@ table td:nth-child(3) {
   }
   .left-pop {
     left: calc(100vw - 9.5vw - 64px - 30px);
+  }
+  .ml-custom-1 {
+    margin-left: 8.3333333%;
+  }
+  
+  .mr-custom-1 {
+    margin-right: 8.3333333%;
   }
 
 }

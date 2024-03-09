@@ -43,6 +43,31 @@
   width: 50vw;
 }
 
+.calendar{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table tr th {
+  @apply rounded-md  ;
+}
+
+table tr th:hover{
+  @apply bg-green-500;
+}
+table tr th:active{
+  @apply bg-green-700;
+}
+
+.title{
+  font-weight: bold;
+}
+
 .left-pop {
   left: calc(100vw - 64px - 30px);
 }
@@ -106,12 +131,16 @@ table td:nth-child(3) {
     display: none;
   }
 
+
 }
 @media (min-width: 640px) {
   .login{
     left: calc(50vw - 12rem) !important;
     width: 24rem !important;
     top: -20px;
+  }
+  .calendar{
+    width: 60%;
   }
 
   .w-view-50{

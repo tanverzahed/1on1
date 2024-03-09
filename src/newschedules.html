@@ -114,7 +114,7 @@
       </ul>
     </div>
     <div
-      class="absolute abs-center drop-shadow-xl w-11/12 sm:w-7/12 h-3/5 bg-white top-40 rounded-md border-solid border-2 border-gray-100 shadow-lg p-2.5 z-20"
+      class="absolute abs-center drop-shadow-xl w-11/12 sm:w-7/12 h-3/5 lg:h-4/5 bg-white top-40 rounded-md border-solid border-2 border-gray-100 shadow-lg p-2.5 z-20"
     >
       <button onclick="location.href='./schedules.html'">
         <img
@@ -125,10 +125,76 @@
         />
       </button>
 
-      <form
-        class="flex flex-1 gap-1 flex-row items-end absolute top-2 content-end left-3"
-        action="POST"
-      ></form>
+      <form class="flex flex-1 flex-col absolute content-end" action="POST">
+        <div>Select avaliable days</div>
+        <div>
+          <table class="calendar">
+            <tr class="title">
+              <th>Su</th>
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>1</th>
+              <th>2</th>
+            </tr>
+            <tr>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+            </tr>
+            <tr>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+            </tr>
+            <tr>
+              <th>17</th>
+              <th>18</th>
+              <th>19</th>
+              <th>20</th>
+              <th>21</th>
+              <th>22</th>
+              <th>23</th>
+            </tr>
+            <tr>
+              <th>24</th>
+              <th>25</th>
+              <th>26</th>
+              <th>27</th>
+              <th>28</th>
+              <th>29</th>
+              <th>30</th>
+            </tr>
+            <tr>
+              <th>31</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </table>
+        </div>
+      </form>
     </div>
   </body>
 </html>

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "montserrat";
+}
+
+.logo-hover {
+  opacity: 40%;
+}
+
+.logo-hover:hover {
+  opacity: 100%;
+}
+
+@media (max-width: 640px) {
+  .display-large {
+    display: none;
+  }
+}

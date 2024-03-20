@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Contacts - 1on1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body class="bg-yellow-50 overflow-x-hidden">
+    <header class="shadow-lg z-10">
+      <nav
+        class="flex flex-row mx-auto list-none bg-white h-20 w-screen sm:px-6 lg:px-8 items-center justify-between relative"
+      >
+        <div class="flex flex-1 justify-start">
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./schedules.html"
+              >Meetings</a
+            >
+          </div>
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./contacts.html"
+              >Contacts</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-shrink-0 items-center">
+          <a href="./index.html"
+            ><img
+              class="h-12 w-auto opacity-65 hover:opacity-100"
+              src="./images/logo.png"
+              alt="1on1 navigation bar logo"
+              width="100px"
+          /></a>
+        </div>
+        <div class="flex flex-1 justify-end sm:ml-6">
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./signup.html"
+              >Signup</a
+            >
+          </div>
+          <div>
+            <a
+              class="bg-gray-100 hover:text-blue-700 font-medium rounded-3xl px-4 mr-2 py-2 border-solid border-slate-300 border-2 opacity-65 hover:opacity-100"
+              href="./login.html"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content mt-20">
+      <div class="flex justify-between flex-row w-full">
+        <div class="text-2xl ml-custom-1 mb-3 mr-20">Contacts</div>
+        <button
+          type="button"
+          onclick="location.href='./newcontacts.html'"
+          class="hover:bg-sky-800 mr-custom-1 mb-3 self-end bg-sky-500 text-white text-sm rounded-lg pr-3 pl-3 pt-2 pb-2 w-28 transition duration-300 ease-in-out hover:shadow-lg hover:opacity-80"
+        >
+          Add contact
+        </button>
+      </div>
+      <table
+        class="mr-auto ml-auto sm:w-10/12 w-full bg-white rounded-sm shadow-md"
+      >
+        <tr>
+          <th></th>
+          <th class="flex flex-col justify-start">Name</th>
+          <th>Email</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Abu Zahed</td>
+          <td>abu.zahed@mail.utoronto.ca</td>
+          <td>
+            <button type="button">
+              <img
+                src="./images/menu-dots-vertical.svg"
+                alt="menu-dots-vertical"
+                width="25px"
+                class="bg-slate-500 rounded-full p-1 bg-opacity-30"
+              />
+            </button>
+            <div
+              class="absolute inline-block justify-start flex flex-1 w-16 left-pop flex-col bg-white shadow-lg rounded-sm border-solid border-2 border-gray-100"
+            >
+              <button class="text-left p-1 hover:bg-gray-100">Edit</button>
+              <button class="text-left p-1 hover:bg-gray-100">Delete</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Blah bleh</td>
+          <td>blah@yahoo.ca</td>
+          <td>
+            <button type="button">
+              <img
+                src="./images/menu-dots-vertical.svg"
+                alt="menu-dots-vertical"
+                width="25px"
+                class="hover:bg-slate-500 hover:rounded-full p-1 hover:bg-opacity-30"
+              />
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

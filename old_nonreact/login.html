@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Login - 1on1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body class="overflow-hidden sm:overflow-visible bg-yellow-50">
+    <header class="shadow-lg z-10">
+      <nav
+        class="flex flex-row mx-auto list-none bg-white h-20 w-screen sm:px-6 lg:px-8 items-center justify-between relative"
+      >
+        <div class="flex flex-1 justify-start">
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./schedules.html"
+              >Meetings</a
+            >
+          </div>
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./contacts.html"
+              >Contacts</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-shrink-0 items-center">
+          <a href="./index.html"
+            ><img
+              class="h-12 w-auto opacity-65 hover:opacity-100"
+              src="./images/logo.png"
+              alt="1on1 navigation bar logo"
+              width="100px"
+          /></a>
+        </div>
+        <div class="flex flex-1 justify-end sm:ml-6">
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./signup.html"
+              >Signup</a
+            >
+          </div>
+          <div>
+            <a
+              class="bg-gray-100 hover:text-blue-700 font-medium rounded-3xl px-4 mr-2 py-2 border-solid border-slate-300 border-2 opacity-65 hover:opacity-100"
+              href="./login.html"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="loginCalender">
+        <img
+          src="./images/login-bg-1.png"
+          alt="Background image of a calender"
+          width="200px"
+        />
+      </div>
+      <div class="loginMeeting">
+        <img
+          src="./images/login-bg-2.png"
+          alt="Background image of a meeting"
+        />
+      </div>
+
+      <div
+        class="login grid grid-rows-12 grid-cols-12 w-11/12 bg-white border-solid rounded-md border-slate-300 border-2 mt-36 ml-auto mr-auto"
+      >
+        <div
+          class="logsign font-montserrat font-medium text-2xl row-span-2 col-span-6 border-solid border-slate-300 border-b-2 bg-gray-100 border-r-2"
+        >
+          <a href="login.html">Login</a>
+        </div>
+        <div
+          class="logsign text-2xl row-span-2 col-span-6 border-solid border-slate-300 border-b-2"
+        >
+          <a href="signup.html">Signup</a>
+        </div>
+        <div
+          class="row-span-1 pt-1 mb-1 row-start-4 col-span-10 col-start-2 bg-white border-solid rounded-md border-slate-300 border-2"
+        >
+          <div class="flex justify-center">
+            <img
+              src="./images/login-google-icon.png"
+              alt="Google logo"
+              width="20px"
+              class="pt-1"
+            />
+            Login with Google
+          </div>
+        </div>
+        <div
+          class="facebook row-span-1 mt-1 pt-1 gap-2 row-start-5 col-span-10 col-start-2 border-solid rounded-md border-slate-300 border-b-2 border-r-2 border-l-2"
+        >
+          <div class="flex justify-center">
+            <img
+              src="./images/login-facebook-icon.png"
+              alt="Facebook logo"
+              width="20px"
+              class="pt-1"
+            />
+            Login with Facebook
+          </div>
+        </div>
+        <div class="row-span-5 col-span-10 row-start-7 col-start-2">
+          <div class="flex min-h-full flex-col justify-center">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+              <form class="space-y-5 lg:space-y-4" action="#" method="POST">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Email address</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="off"
+                      required
+                      class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-between">
+                    <label
+                      for="password"
+                      class="block text-sm font-medium leading-6 text-gray-900"
+                      >Password</label
+                    >
+                    <div class="text-sm">
+                      <a
+                        href="#"
+                        class="font-semibold text-indigo-600 hover:text-indigo-500"
+                        >Forgot password?</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <input
+                      id="password"
+                      name="password"
+                      type="password"
+                      autocomplete="current-password"
+                      required
+                      class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    class="flex w-full justify-center rounded-md facebook px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
+                  >
+                    Sign in
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

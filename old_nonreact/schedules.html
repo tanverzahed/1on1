@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>1on1 - Meetings</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body class="bg-yellow-50 overflow-x-hidden">
+    <header class="shadow-lg z-10">
+      <nav
+        class="flex flex-row mx-auto list-none bg-white h-20 w-screen sm:px-6 lg:px-8 items-center justify-between relative"
+      >
+        <div class="flex flex-1 justify-start">
+          <div>
+            <a class="px-2 py-2 hover:text-blue-700 font-medium" href="#"
+              >Meetings</a
+            >
+          </div>
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./contacts.html"
+              >Contacts</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-shrink-0 items-center">
+          <a href="./index.html"
+            ><img
+              class="h-12 w-auto opacity-65 hover:opacity-100"
+              src="./images/logo.png"
+              alt="1on1 navigation bar logo"
+              width="100px"
+          /></a>
+        </div>
+        <div class="flex flex-1 justify-end sm:ml-6">
+          <div>
+            <a
+              class="px-2 py-2 hover:text-blue-700 font-medium"
+              href="./signup.html"
+              >Signup</a
+            >
+          </div>
+          <div>
+            <a
+              class="bg-gray-100 hover:text-blue-700 font-medium rounded-3xl px-4 mr-2 py-2 border-solid border-slate-300 border-2 opacity-65 hover:opacity-100"
+              href="./login.html"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="mt-20">
+      <div class="flex justify-between flex-row w-full">
+        <div class="text-2xl ml-custom-1 mb-3 mr-20">Meetings</div>
+        <button
+          type="button"
+          onclick="location.href='./newschedules.html'"
+          class="hover:bg-sky-800 mr-custom-1 mb-3 self-end bg-sky-500 text-white text-sm rounded-lg pr-3 pl-3 pt-2 pb-2 w-30 transition duration-300 ease-in-out hover:shadow-lg hover:opacity-80"
+        >
+          Add meeting
+        </button>
+      </div>
+      <ul>
+        <li
+          class="flex flex-1 flex-col max-h-80 mb-3 bg-white shadow-lg w-full lg:w-10/12 ml-auto pt-4 pb-4 mr-auto pl-3 pr-3"
+        >
+          <div
+            class="flex flex-1 flex-row justify-between items-center border-b-2 mb-2 pb-2"
+          >
+            <div>
+              <h1>HR annual</h1>
+              <h5 class="font-montserrat text-xs">with John Snow</h5>
+            </div>
+            <img
+              src="./images/up1.svg"
+              alt="Dropdown for meeting"
+              width="18px"
+              class="opacity-50"
+            />
+          </div>
+          <div
+            class="flex flex-1 flex-row items-end justify-between bg-slate-50"
+          >
+            <div>
+              <h2>Date: 21-10-2025</h2>
+              <h2>Time: 5:00 pm</h2>
+              <h2>Duration: 30 mins</h2>
+            </div>
+            <div>
+              <img src="./images/edit.svg" alt="Edit button" width="14px" />
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="flex flex-1 flex-row justify-between mb-3 items-center pl-3 pr-3 pt-4 pb-4 ml-auto mr-auto w-full lg:w-10/12 bg-white shadow-lg"
+        >
+          <div>
+            <h1>Esports discussion</h1>
+            <h5 class="font-montserrat text-xs">with Faker</h5>
+          </div>
+          <img
+            src="./images/down2.svg"
+            alt="Dropdown for meeting"
+            width="18px"
+            class="opacity-50"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

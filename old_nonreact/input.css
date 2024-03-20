@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'montserrat';
+  src: url();
+}
+
+/* Header styles */
+.header-item-text {
+
+  @apply px-2 py-2 hover:text-blue-700 font-montserrat font-semibold;
+}
+.header-item-box {
+  width: 100vw;
+  @apply bg-white px-2 py-2 flex flex-row justify-start ;
+}
+
+.ml-custom-1 {
+  margin-left: 2%;
+}
+
+.mr-custom-1 {
+  margin-right: 2%;
+}
+
+.days{
+@apply flex flex-col w-32 h-60 bg-gray-50
+}
+
+*{
+  @apply font-montserrat font-medium;
+}
+
+.meetingFinal{
+  @apply  text-xl bg-green-600 pr-6 pl-6 pt-4 pb-4 text-white;
+}
+.meetingUnFinal{
+  @apply  text-xl bg-red-600 pr-6 pl-6 pt-4 pb-4 text-white flex flex-1 justify-between flex-row;
+}
+.w-view-50{
+  width: 50vw;
+}
+
+.calendar{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table tr th {
+  @apply rounded-md  ;
+}
+
+table tr th:hover{
+  @apply bg-green-500;
+}
+table tr th:active{
+  @apply bg-green-700;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.left-pop {
+  left: calc(100vw - 64px - 30px);
+}
+.abs-center{
+  left: calc(100vw - 58.3333333% - 35%);
+}
+th, td{
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+
+table td:nth-child(3) {
+  color: blue;
+}
+
+.row-span-13 {
+  grid-row: span 13 / span 13;
+}
+.logsign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facebook{
+  background-color: rgba(56, 84, 153, 1);
+  color: white;
+}
+.facebookIcon{
+  padding-top: 2;
+}
+
+.loginCalender{
+  position: absolute;
+  top: 65px;
+  z-index: -1;
+  left: calc(100vw - 300px);
+}
+.loginMeeting{
+  position: absolute;
+  left: -200px;
+  top:200px;
+}
+
+.login{
+  height: min-content;
+  position: absolute;
+  left: calc(4.5vw);
+  grid-template-rows: repeat(12, 40px);
+
+}
+.signup{
+  grid-template-rows: repeat(17, 40px);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  .loginCalender, .loginMeeting{
+    display: none;
+  }
+
+
+}
+@media (min-width: 640px) {
+  .login{
+    left: calc(50vw - 12rem) !important;
+    width: 24rem !important;
+    top: -20px;
+  }
+  .calendar{
+    width: 60%;
+  }
+
+  .w-view-50{
+    width: 40vw;
+  }
+  .abs-center{
+    left: calc(100vw - 58.3333333% - 22%);
+  }
+  .loginCalender{
+    top: 65px;
+    z-index: -1;
+    left: calc(100vw - 230px);
+  }
+  .loginMeeting{
+    left: -230px;
+    top:200px;
+  }
+  .left-pop {
+    left: calc(100vw - 9.5vw - 64px - 30px);
+  }
+  .ml-custom-1 {
+    margin-left: 8.3333333%;
+  }
+  
+  .mr-custom-1 {
+    margin-right: 8.3333333%;
+  }
+
+}
+@media (min-width:1024px) {
+  .login{
+    left: calc(50vw - 16rem) ;
+    width: 32rem ;
+    top: -20px
+  }
+  .w-view-50{
+    width: 30vw;
+  }
+  .loginCalender{
+    top: 65px;
+    z-index: -1;
+    left: calc(100vw - 300px);
+  }
+  .left-pop {
+    left: calc(100vw - 10.5vw - 64px - 30px);
+  }
+}

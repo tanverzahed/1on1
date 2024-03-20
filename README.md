@@ -7,15 +7,9 @@
 Struggling to coordinate meetings online? Say hello to 1on1, the solution to your scheduling headaches. Our website streamlines the entire process, allowing you to easily share availability, propose meeting times, and receive instant confirmations all in one user-friendly platform. With 1on1, scheduling meetings online has never been easier. Sign up now and revolutionize the way you schedule meetings! <br/>
 
 ---
+## Development notes:
 
-
-
-
-
-
-
-
-
+I developed the server side using Django rest framework. 
 
 
 

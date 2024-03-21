@@ -20,9 +20,9 @@ Feature 1: User must be able to **add** and **remove** other users of the applic
 Feature 2: User can set a customizable nickname and profile image for thier contacts <br/>
 
 #### Meetings:
-Feature 1: User can make an calendar where they can pick preference levels for upcoming weeks.
-Feature 2: User can invite a person from thier contact into the calendar to select thier preference levels.
-Feature 3: An algorithm will suggest an optimal meeting time, which the user can confirm or reject.
+Feature 1: User can make an calendar where they can pick preference levels for upcoming weeks. <br/>
+Feature 2: User can invite a person from thier contact into the calendar to select thier preference levels. <br/>
+Feature 3: An algorithm will suggest an optimal meeting time, which the user can confirm or reject. <br/>
 * If the user reject, I just made it so we go through the next best suggested date OR they can change thier current preferences.
 * Once confirmed, no more changes to the meeting can be made
 #### Login:

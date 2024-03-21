@@ -11,9 +11,7 @@ Struggling to coordinate meetings online? Say hello to 1on1, the solution to you
 
 I developed the server side using Django rest framework. 
 
-
-
-
+For the client side I used a mix of React and Tailwind to make my responsive layouts. 
 
 
 

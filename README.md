@@ -25,5 +25,3 @@ For the client side I used a mix of React and Tailwind to make my responsive lay
 
 
 
-
-

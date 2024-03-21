@@ -18,6 +18,9 @@ Feature 1: User must be able to **add** and **remove** other users of the applic
 * User needs to provide an email address to add people to thier contacts <br/>
 
 Feature 2: User can set a customizable nickname and profile image for thier contacts <br/>
+Design:
+![contact-design](https://github.com/tanverzahed/1on1/assets/113176044/a6abbb6d-7f51-4d0f-90bb-2a621ea42010) 
+![contact-design-2](https://github.com/tanverzahed/1on1/assets/113176044/520edb6c-ce06-4a50-b4f1-4a409ad8087b)
 
 #### Meetings:
 Feature 1: User can make an calendar where they can pick preference levels for upcoming weeks. <br/>
